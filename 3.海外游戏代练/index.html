@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameBoostPro - 专业游戏代练服务平台，提供魔兽世界、暗黑破坏神4、英雄联盟代练服务，全程直播，100%安全可靠">
+    <meta name="keywords" content="游戏代练,魔兽世界代练,暗黑破坏神4代练,英雄联盟代练,安全代练服务,直播代练,GameBoostPro">
+    <title>GameBoostPro - 专业游戏代练服务平台</title>
+    <!-- 引入Google字体 Rajdhani - 现代科技感字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 引入外部CSS文件 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Game<span>BoostPro</span></a>
+            <div class="nav-links">
+                <div class="game-menu">
+                    <button class="game-btn active" data-game="wow">魔兽世界</button>
+                    <button class="game-btn" data-game="diablo4">暗黑破坏神4</button>
+                    <button class="game-btn" data-game="lol">英雄联盟</button>
+                </div>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="lang-toggle">
+                        <span id="current-lang">简体中文</span> ▼
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <div class="lang-option" data-lang="zh-CN">简体中文</div>
+                        <div class="lang-option" data-lang="en-US">English</div>
+                        <div class="lang-option" data-lang="es-ES">Español</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 魔兽世界内容 -->
+        <section id="wow-content" class="game-content active">
+            <!-- 轮播图组件 -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active" style="background-image: url('images/wow/slide1.jpg');">
+                        <div class="carousel-caption">
+                            <h3>专业魔兽世界代练</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/wow/slide2.jpg');">
+                        <div class="carousel-caption">
+                            <h3>全职业副本攻略</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/wow/slide3.jpg');">
+                        <div class="carousel-caption">
+                            <h3>定制化练级方案</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev">❮</button>
+                    <button class="carousel-btn next">❯</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            
+            <div class="game-header">
+                <h1>魔兽世界代练服务</h1>
+                <p>每小时仅需$10，100%手工操作，全程直播代练</p>
+            </div>
+
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>练级服务</h3>
+                    <p>从1级到70级快速练级，包含装备升级，技能培训和专业技能提升。我们的专业团队将帮助您在最短时间内达到满级。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3>副本攻略</h3>
+                    <p>专业团队带您攻克各种难度副本，获取稀有装备和成就。无论是经典副本还是最新团队副本，我们都能助您一臂之力。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3>个性化服务</h3>
+                    <p>根据您的需求定制服务计划，包括PVP排位、稀有坐骑收集、成就点数冲刺等。告诉我们您的目标，我们来实现它。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 联系部分的修改，三个游戏板块都需要更新 -->
+
+            <!-- 魔兽世界内容中的联系部分 -->
+            <div class="contact-section">
+                <h2>联系我们</h2>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <img src="images/icon/telegram.png" alt="Telegram" />
+                        </div>
+                        <h3>Telegram</h3>
+                        <a href="https://t.me/GameBoostPro" target="_blank">@GameBoostPro</a>
+                        <div class="qr-code-img">
+                            <img src="images/contact/telegram.jpg" alt="Telegram二维码" class="qr-code-zoomable" />
+                            <span class="qr-tip">点击放大 / 长按保存</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <img src="images/icon/wechat.png" alt="WeChat" />
+                        </div>
+                        <h3>微信</h3>
+                        <div class="qr-code-img">
+                            <img src="images/contact/wechat-qr.png" alt="微信二维码" class="qr-code-zoomable" />
+                            <span class="qr-tip">点击放大 / 长按保存</span>
+                        </div>
+                        <span>扫码添加客服</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 暗黑破坏神4内容 -->
+        <section id="diablo4-content" class="game-content">
+            <!-- 轮播图组件 -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active" style="background-image: url('images/diablo4/slide1.jpg');">
+                        <div class="carousel-caption">
+                            <h3>暗黑破坏神4专业代练</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/diablo4/slide2.jpg');">
+                        <div class="carousel-caption">
+                            <h3>高难度地下城通关</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/diablo4/slide3.jpg');">
+                        <div class="carousel-caption">
+                            <h3>顶级装备收集服务</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev">❮</button>
+                    <button class="carousel-btn next">❯</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            
+            <div class="game-header">
+                <h1>暗黑破坏神4代练服务</h1>
+                <p>每小时仅需$10，100%手工操作，全程直播代练</p>
+            </div>
+
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>角色升级</h3>
+                    <p>快速将您的角色升级至满级，获取游戏后期所需的技能点和属性点。我们的专业玩家将帮助您跳过枯燥的升级阶段。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3>装备收集</h3>
+                    <p>帮助您获取游戏中最强大的装备和符文。我们会针对您的职业搭配最佳装备组合，提升角色战斗力。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3>地下城挑战</h3>
+                    <p>攻克高难度地下城，获取稀有奖励和成就。我们的团队拥有丰富的暗黑破坏神4游戏经验，能够应对各种挑战。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 联系部分的修改，三个游戏板块都需要更新 -->
+
+            <!-- 暗黑破坏神4内容中的联系部分 -->
+            <div class="contact-section">
+                <h2>联系我们</h2>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <img src="images/icon/telegram.png" alt="Telegram" />
+                        </div>
+                        <h3>Telegram</h3>
+                        <a href="https://t.me/GameBoostPro" target="_blank">@GameBoostPro</a>
+                        <div class="qr-code-img">
+                            <img src="images/contact/telegram.jpg" alt="Telegram二维码" class="qr-code-zoomable" />
+                            <span class="qr-tip">点击放大 / 长按保存</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <img src="images/icon/wechat.png" alt="WeChat" />
+                        </div>
+                        <h3>微信</h3>
+                        <div class="qr-code-img">
+                            <img src="images/contact/wechat-qr.png" alt="微信二维码" class="qr-code-zoomable" />
+                            <span class="qr-tip">点击放大 / 长按保存</span>
+                        </div>
+                        <span>扫码添加客服</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 英雄联盟内容 -->
+        <section id="lol-content" class="game-content">
+            <!-- 轮播图组件 -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active" style="background-image: url('images/lol/slide1.jpg');">
+                        <div class="carousel-caption">
+                            <h3>英雄联盟专业代练</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/lol/slide2.jpg');">
+                        <div class="carousel-caption">
+                            <h3>高分段排位冲分</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/lol/slide3.jpg');">
+                        <div class="carousel-caption">
+                            <h3>熟练度快速提升</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev">❮</button>
+                    <button class="carousel-btn next">❯</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            
+            <div class="game-header">
+                <h1>英雄联盟代练服务</h1>
+                <p>每小时仅需$10，100%手工操作，全程直播代练</p>
+            </div>
+
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>排位代练</h3>
+                    <p>从铁到王者，我们的职业选手可以帮您提升段位。根据您的目标段位和当前分数，我们提供最高效的排位代练。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3>定位赛代打</h3>
+                    <p>新赛季定位赛关系到一整个赛季的起点，让我们的高手为您打好开局，获得更好的起始排名。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3>英雄熟练度</h3>
+                    <p>提升特定英雄的熟练度等级，解锁成就和限定皮肤。我们的代练精通所有位置和英雄，能高效提升熟练度。</p>
+                    <div class="price">
+                        <span>每小时</span>
+                        <span class="price-badge">$10/小时</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 联系部分的修改，三个游戏板块都需要更新 -->
+
+            <!-- 英雄联盟内容中的联系部分 -->
+            <div class="contact-section">
+                <h2>联系我们</h2>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <img src="images/icon/telegram.png" alt="Telegram" />
+                        </div>
+                        <h3>Telegram</h3>
+                        <a href="https://t.me/GameBoostPro" target="_blank">@GameBoostPro</a>
+                        <div class="qr-code-img">
+                            <img src="images/contact/telegram.jpg" alt="Telegram二维码" class="qr-code-zoomable" />
+                            <span class="qr-tip">点击放大 / 长按保存</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <img src="images/icon/wechat.png" alt="WeChat" />
+                        </div>
+                        <h3>微信</h3>
+                        <div class="qr-code-img">
+                            <img src="images/contact/wechat-qr.png" alt="微信二维码" class="qr-code-zoomable" />
+                            <span class="qr-tip">点击放大 / 长按保存</span>
+                        </div>
+                        <span>扫码添加客服</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon">📱</a>
+                <a href="#" class="social-icon">📘</a>
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">🎮</a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 GameBoostPro - 专业游戏代练服务平台. 保留所有权利.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 右侧联系方式面板 -->
+    <div class="contact-sidebar">
+        <div class="contact-sidebar-item">
+            <div class="contact-sidebar-icon" title="Telegram">
+                <img src="images/icon/telegram.png" alt="Telegram" />
+            </div>
+            <span class="contact-sidebar-label">Telegram</span>
+            <div class="contact-sidebar-qr">
+                <div class="qr-code-sidebar">
+                    <img src="images/contact/telegram.jpg" alt="Telegram二维码" class="qr-code-zoomable" />
+                    <span class="qr-tip">点击放大 / 长按保存</span>
+                </div>
+            </div>
+            <a href="https://t.me/GameBoostPro" target="_blank" class="contact-full-link"></a>
+        </div>
+        
+        <div class="contact-sidebar-item">
+            <div class="contact-sidebar-icon" title="微信">
+                <img src="images/icon/wechat.png" alt="WeChat" />
+            </div>
+            <span class="contact-sidebar-label">微信</span>
+            <div class="contact-sidebar-qr">
+                <div class="qr-code-sidebar">
+                    <img src="images/contact/wechat-qr.png" alt="微信二维码" class="qr-code-zoomable" />
+                    <span class="qr-tip">点击放大 / 长按保存</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 二维码放大查看弹窗 -->
+    <div id="qr-modal" class="qr-modal">
+        <div class="qr-modal-content">
+            <span class="qr-close">&times;</span>
+            <img id="qr-modal-img" src="" alt="二维码大图">
+            <p class="qr-modal-tip">长按图片保存到相册</p>
+        </div>
+    </div>
+
+    <!-- 引入外部JavaScript文件 -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
